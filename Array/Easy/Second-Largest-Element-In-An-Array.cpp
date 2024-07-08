@@ -11,6 +11,10 @@ void printSecondLargest(int arr[], int n)
             slargest = largest;
             largest = arr[i];
         }
+        else if (arr[i] < largest && arr[i] > slargest)
+        {
+            slargest = arr[i];
+        }
     }
     cout << "\nSecond Largest : " << slargest << endl;
 }
